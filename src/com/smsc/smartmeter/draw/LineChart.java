@@ -11,21 +11,20 @@ import android.content.Context;
 
 public class LineChart {
 	private GraphicalView chart; 
-	private String titleString;
-	private String xTitleString;
 	private Context context;
-	private String formatString;
-	public LineChart(String title, String xTitle, Context context, String format) {
-		this.titleString = title;
-		this.xTitleString = xTitle;
+	XYMultipleSeriesRenderer renderer;
+	XYMultipleSeriesDataset dataset;
+	public LineChart(Context context) {
+
+		this.context = context;
 	}
 	
-	private XYMultipleSeriesRenderer getDemoRenderer() {
-		return null;
+	private void setDemoRenderer(String title, 
+			String xTitle, String format) {
+		
 	}
 	
-	private XYMultipleSeriesDataset getDemoDataSet() {
-		return null;
+	private void setDemoDataSet() {
 		
 	}
 }
